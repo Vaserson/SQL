@@ -92,11 +92,11 @@ WHERE City = 'Madrid' AND Country = 'Spain';</pre>
 SELECT * FROM customers
 WHERE City = 'London' OR Country = 'France';</pre>
 	</code>
-	<button type="button" class="collapsible">2.3 Вывести customers у которых город 'London' ИЛИ страна 'France'</button>
+	<button type="button" class="collapsible">2.3 Вывести customers у которых город 'London' ИЛИ страна НЕ 'France'</button>
 	<code class="content">
 		<pre>
 SELECT * FROM customers
-WHERE City = 'London' OR Country = 'France';</pre>
+WHERE City = 'London' OR NOT Country = 'France';</pre>
 	</code>
 	<button type="button" class="collapsible">2.4 Вывести customers у которых CustomerName имеет в названии букву на 'z' И город 'London' ИЛИ страна 'Spain'</button>
 	<code class="content">
